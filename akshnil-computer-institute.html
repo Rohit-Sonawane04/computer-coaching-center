@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the best computer training institute in Shindkheda and learn professional computer courses including MS Office, Tally with GST, Graphic Design, Web Development and Programming." />
+  <meta name="keywords" content="computer institute, computer courses, MS Office, Tally GST, Graphic Design, Programming, Shindkheda, Dhule, Maharashtra" />
+  <title>Best Computer Training Institute | Akshnil Computer Institute | Shindkheda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #0D6EFD;
+      --primary-dark: #0B5ED7;
+      --accent: #FFC107;
+      --accent-dark: #e0a800;
+      --bg: #F8F9FA;
+      --card-bg: #FFFFFF;
+      --text: #222831;
+      --text-light: #555e6e;
+      --border: #e0e6f0;
+      --gradient: linear-gradient(135deg, #0D6EFD 0%, #0b44a8 100%);
+      --shadow: 0 4px 24px rgba(13,110,253,0.10);
+      --shadow-hover: 0 8px 40px rgba(13,110,253,0.18);
+      --radius: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #eaf0ff; }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+
+    /* ── NAV ── */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 72px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 2px 20px rgba(13,110,253,0.08);
+      transition: box-shadow 0.3s;
+    }
+    .navbar.scrolled { box-shadow: 0 4px 30px rgba(13,110,253,0.14); }
+
+    .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: var(--gradient);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 1.4rem; font-weight: 800;
+      box-shadow: 0 4px 14px rgba(13,110,253,0.3);
+      flex-shrink: 0;
+    }
+    .nav-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+    .nav-brand-text span:first-child { font-size: 1rem; font-weight: 700; color: var(--primary); }
+    .nav-brand-text span:last-child { font-size: 0.62rem; color: var(--text-light); font-weight: 400; letter-spacing: 0.3px; }
+
+    .nav-menu { display: flex; gap: 2px; list-style: none; }
+    .nav-menu a {
+      display: block; padding: 8px 14px; border-radius: 8px;
+      text-decoration: none; color: var(--text); font-size: 0.88rem; font-weight: 500;
+      transition: all 0.2s;
+    }
+    .nav-menu a:hover { background: #eaf0ff; color: var(--primary); }
+
+    .nav-cta {
+      background: var(--gradient); color: #fff !important;
+      padding: 9px 20px !important; border-radius: 25px !important;
+      box-shadow: 0 4px 14px rgba(13,110,253,0.3);
+    }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(13,110,253,0.4) !important; background: #eaf0ff !important; color: var(--primary) !important; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+    .hamburger span { width: 24px; height: 2.5px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex; align-items: center;
+      overflow: hidden;
+      background: #05133a;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80') center/cover no-repeat;
+      opacity: 0.22;
+    }
+    .hero-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .hero-shapes .blob {
+      position: absolute; border-radius: 50%; filter: blur(80px);
+      animation: blobFloat 8s ease-in-out infinite alternate;
+    }
+    .blob1 { width: 500px; height: 500px; background: rgba(13,110,253,0.35); top: -100px; right: -100px; animation-delay: 0s; }
+    .blob2 { width: 350px; height: 350px; background: rgba(255,193,7,0.2); bottom: -80px; left: -80px; animation-delay: -3s; }
+    .blob3 { width: 250px; height: 250px; background: rgba(13,110,253,0.2); bottom: 100px; right: 20%; animation-delay: -5s; }
+    @keyframes blobFloat { 0%{transform:scale(1) translate(0,0)} 100%{transform:scale(1.1) translate(20px,-20px)} }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 140px 8% 80px;
+      max-width: 720px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,193,7,0.15); border: 1px solid rgba(255,193,7,0.4);
+      color: var(--accent); border-radius: 30px;
+      padding: 6px 18px; font-size: 0.78rem; font-weight: 600;
+      margin-bottom: 24px; letter-spacing: 0.5px;
+      animation: fadeInUp 0.6s ease both;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800; color: #fff; line-height: 1.15;
+      margin-bottom: 20px;
+      animation: fadeInUp 0.7s ease 0.1s both;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero p {
+      color: rgba(255,255,255,0.78); font-size: 1.05rem; line-height: 1.75;
+      margin-bottom: 36px; max-width: 560px;
+      animation: fadeInUp 0.7s ease 0.2s both;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeInUp 0.7s ease 0.3s both; }
+    .btn-primary {
+      background: var(--gradient); color: #fff;
+      padding: 14px 32px; border-radius: 30px;
+      font-size: 0.95rem; font-weight: 600;
+      text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 6px 24px rgba(13,110,253,0.4);
+      transition: all 0.25s; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(13,110,253,0.5); }
+    .btn-outline {
+      background: transparent; color: #fff;
+      padding: 13px 30px; border-radius: 30px;
+      border: 2px solid rgba(255,255,255,0.45);
+      font-size: 0.95rem; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+      transition: all 0.25s; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; transform: translateY(-2px); }
+
+    .hero-stats {
+      position: relative; z-index: 2;
+      display: flex; gap: 40px; flex-wrap: wrap;
+      padding: 0 8% 60px; margin-top: auto;
+      animation: fadeInUp 0.7s ease 0.4s both;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+    .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.65); margin-top: 4px; }
+
+    @keyframes fadeInUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 90px 8%; }
+    .section-tag {
+      display: inline-block;
+      background: #eaf0ff; color: var(--primary);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; padding: 5px 16px; border-radius: 30px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700; color: var(--text); line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .section-title span { color: var(--primary); }
+    .section-sub { color: var(--text-light); font-size: 1rem; line-height: 1.7; max-width: 580px; }
+    .section-header { margin-bottom: 56px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-sub { margin: 0 auto; }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.65s cubic-bezier(.16,1,.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── ABOUT ── */
+    .about { background: #fff; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .about-img-wrap { position: relative; }
+    .about-img-main {
+      width: 100%; border-radius: 24px; overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-img-main i { font-size: 5rem; color: var(--primary); opacity: 0.3; }
+    .about-badge-card {
+      position: absolute; bottom: -20px; right: -20px;
+      background: var(--gradient); color: #fff;
+      border-radius: 16px; padding: 20px 24px;
+      box-shadow: 0 8px 30px rgba(13,110,253,0.35);
+      text-align: center;
+    }
+    .about-badge-card .big { font-size: 2rem; font-weight: 800; }
+    .about-badge-card small { font-size: 0.72rem; opacity: 0.85; }
+
+    .about-points { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+    .about-point {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: var(--bg); border-radius: 12px; padding: 16px 18px;
+      border: 1px solid var(--border);
+      transition: all 0.25s;
+    }
+    .about-point:hover { border-color: var(--primary); box-shadow: var(--shadow); transform: translateX(4px); }
+    .about-point-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      color: var(--primary); font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .about-point h4 { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+    .about-point p { font-size: 0.8rem; color: var(--text-light); margin-top: 2px; }
+
+    .mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+    .mv-card {
+      background: var(--bg); border-radius: 14px; padding: 20px;
+      border: 1px solid var(--border); text-align: center;
+    }
+    .mv-card i { font-size: 1.5rem; color: var(--primary); margin-bottom: 8px; }
+    .mv-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; }
+    .mv-card p { font-size: 0.75rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ── COURSES ── */
+    .courses { background: var(--bg); }
+    .courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+    .course-card {
+      background: var(--card-bg); border-radius: var(--radius);
+      padding: 32px 28px; border: 1px solid var(--border);
+      box-shadow: var(--shadow); transition: all 0.3s;
+      cursor: pointer; position: relative; overflow: hidden;
+    }
+    .course-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: var(--gradient); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .course-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: transparent; }
+    .course-card:hover::before { transform: scaleX(1); }
+    .course-icon {
+      width: 60px; height: 60px; border-radius: 14px;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; color: var(--primary); margin-bottom: 20px;
+      transition: all 0.3s;
+    }
+    .course-card:hover .course-icon { background: var(--gradient); color: #fff; transform: scale(1.05); }
+    .course-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
+    .course-card p { font-size: 0.82rem; color: var(--text-light); line-height: 1.65; margin-bottom: 20px; }
+    .course-meta { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .course-tag {
+      background: #eaf0ff; color: var(--primary);
+      font-size: 0.68rem; font-weight: 600; padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .btn-sm {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: transparent; color: var(--primary);
+      border: 2px solid var(--primary); padding: 8px 20px;
+      border-radius: 25px; font-size: 0.8rem; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: all 0.25s;
+    }
+    .btn-sm:hover { background: var(--primary); color: #fff; }
+
+    /* ── FACILITIES ── */
+    .facilities { background: #fff; }
+    .facilities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+    .fac-card {
+      background: var(--bg); border-radius: var(--radius); padding: 32px 24px;
+      border: 1px solid var(--border); text-align: center;
+      transition: all 0.3s; position: relative; overflow: hidden;
+    }
+    .fac-card::after {
+      content: ''; position: absolute; inset: 0;
+      background: var(--gradient); opacity: 0; transition: opacity 0.3s;
+      z-index: 0; border-radius: var(--radius);
+    }
+    .fac-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .fac-card:hover::after { opacity: 1; }
+    .fac-card > * { position: relative; z-index: 1; transition: color 0.3s; }
+    .fac-card:hover h3, .fac-card:hover p { color: #fff; }
+    .fac-icon {
+      width: 70px; height: 70px; border-radius: 18px; margin: 0 auto 18px;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; color: var(--primary); transition: all 0.3s;
+    }
+    .fac-card:hover .fac-icon { background: rgba(255,255,255,0.2); color: #fff; }
+    .fac-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; }
+    .fac-card p { font-size: 0.8rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ── GALLERY ── */
+    .gallery { background: var(--bg); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+    .gallery-item {
+      position: relative; overflow: hidden; border-radius: 14px;
+      cursor: pointer; aspect-ratio: 1;
+      background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+    }
+    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; min-height: 300px; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay {
+      position: absolute; inset: 0; background: rgba(13,110,253,0.6);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay i { font-size: 2rem; color: #fff; }
+    .gallery-placeholder {
+      width: 100%; height: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 10px;
+      color: var(--primary); opacity: 0.5;
+    }
+    .gallery-placeholder i { font-size: 2.5rem; }
+    .gallery-placeholder span { font-size: 0.75rem; font-weight: 600; text-align: center; padding: 0 10px; }
+
+    /* Lightbox */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.92); align-items: center; justify-content: center;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox-inner { position: relative; max-width: 90vw; max-height: 90vh; }
+    .lightbox-inner img { max-width: 90vw; max-height: 80vh; border-radius: 12px; display: block; }
+    .lightbox-close {
+      position: absolute; top: -40px; right: 0;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,0.15); color: #fff;
+      border: none; font-size: 1.2rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.3); }
+    .lightbox-caption {
+      text-align: center; color: rgba(255,255,255,0.8);
+      font-size: 0.85rem; margin-top: 12px;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: #fff; }
+    .testi-slider { position: relative; overflow: hidden; }
+    .testi-track { display: flex; transition: transform 0.5s cubic-bezier(.16,1,.3,1); }
+    .testi-card {
+      min-width: 100%; padding: 0 20px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    }
+    .testi-item {
+      background: var(--bg); border-radius: var(--radius); padding: 28px;
+      border: 1px solid var(--border); position: relative;
+    }
+    .testi-item::before {
+      content: '\201C'; position: absolute; top: 12px; left: 20px;
+      font-size: 4rem; color: var(--primary); opacity: 0.15;
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .stars { color: #f59e0b; font-size: 0.9rem; margin-bottom: 12px; }
+    .testi-text { font-size: 0.87rem; color: var(--text-light); line-height: 1.7; margin-bottom: 18px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gradient); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 700; flex-shrink: 0;
+    }
+    .testi-author-info h4 { font-size: 0.88rem; font-weight: 700; }
+    .testi-author-info span { font-size: 0.72rem; color: var(--primary); }
+
+    .testi-controls { display: flex; gap: 12px; justify-content: center; margin-top: 36px; }
+    .testi-btn {
+      width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--border);
+      background: #fff; color: var(--primary); font-size: 1rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.25s;
+    }
+    .testi-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .testi-dots { display: flex; gap: 8px; align-items: center; }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--border); cursor: pointer; transition: all 0.25s;
+    }
+    .dot.active { background: var(--primary); width: 24px; border-radius: 4px; }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--bg); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+    .contact-info-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #fff; border-radius: 14px; padding: 20px;
+      margin-bottom: 14px; border: 1px solid var(--border);
+      transition: all 0.25s;
+    }
+    .contact-info-item:hover { border-color: var(--primary); box-shadow: var(--shadow); }
+    .contact-info-icon {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: var(--gradient); color: #fff; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .contact-info-text h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+    .contact-info-text p, .contact-info-text a { font-size: 0.82rem; color: var(--text-light); text-decoration: none; line-height: 1.5; }
+    .contact-info-text a:hover { color: var(--primary); }
+
+    .map-wrap { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); margin-top: 20px; }
+    .map-wrap iframe { width: 100%; height: 220px; border: none; display: block; }
+
+    .contact-form {
+      background: #fff; border-radius: var(--radius); padding: 36px;
+      border: 1px solid var(--border); box-shadow: var(--shadow);
+    }
+    .contact-form h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid var(--border); border-radius: 10px;
+      font-family: 'Poppins', sans-serif; font-size: 0.85rem; color: var(--text);
+      background: var(--bg); transition: border 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: var(--primary); background: #fff;
+      box-shadow: 0 0 0 3px rgba(13,110,253,0.08);
+    }
+    .form-group input.error, .form-group textarea.error { border-color: #ef4444; }
+    .form-group .err-msg { font-size: 0.72rem; color: #ef4444; margin-top: 4px; display: none; }
+    .form-group .err-msg.show { display: block; }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-submit {
+      width: 100%; padding: 14px; border: none;
+      background: var(--gradient); color: #fff; font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem; font-weight: 600; border-radius: 30px;
+      cursor: pointer; box-shadow: 0 6px 20px rgba(13,110,253,0.35);
+      transition: all 0.25s; display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .form-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(13,110,253,0.45); }
+    .success-msg {
+      display: none; background: #d1fae5; color: #065f46;
+      border: 1px solid #a7f3d0; border-radius: 10px; padding: 14px 18px;
+      font-size: 0.85rem; margin-top: 14px; align-items: center; gap: 10px;
+    }
+    .success-msg.show { display: flex; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #05133a; color: rgba(255,255,255,0.75);
+      padding: 64px 8% 0;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; }
+    .footer-brand .nav-logo { margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.82rem; line-height: 1.7; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
+    .social-links { display: flex; gap: 10px; }
+    .social-links a {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7);
+      display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+      text-decoration: none; transition: all 0.25s;
+    }
+    .social-links a:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+    footer h4 { color: #fff; font-size: 0.95rem; font-weight: 700; margin-bottom: 18px; position: relative; padding-bottom: 10px; }
+    footer h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 30px; height: 2px; background: var(--accent); }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+    .footer-links a::before { content: '›'; color: var(--accent); font-size: 1rem; }
+    .footer-links a:hover { color: var(--accent); padding-left: 4px; }
+    .footer-contact-item { display: flex; gap: 10px; margin-bottom: 12px; align-items: flex-start; }
+    .footer-contact-item i { color: var(--accent); font-size: 0.9rem; margin-top: 2px; flex-shrink: 0; }
+    .footer-contact-item span { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 48px; padding: 20px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.78rem; color: rgba(255,255,255,0.45); flex-wrap: wrap; gap: 10px;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 992px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-img-wrap { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 1; grid-row: span 1; }
+      .testi-card { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 70px 5%; }
+      .navbar { padding: 0 5%; }
+      .nav-menu {
+        position: fixed; top: 72px; left: 0; right: 0;
+        background: #fff; flex-direction: column; gap: 0;
+        padding: 12px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transform: translateY(-120%); transition: transform 0.35s;
+        z-index: 999;
+      }
+      .nav-menu.open { transform: translateY(0); }
+      .nav-menu a { padding: 12px 24px; border-radius: 0; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 120px 5% 40px; }
+      .hero-stats { padding: 0 5% 40px; gap: 24px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .testi-card { padding: 0; }
+      .mv-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .courses-grid { grid-template-columns: 1fr; }
+}
+.loader-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg);
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-container.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Text Design */
+.loader-text{
+  font-family: 'Segoe UI', sans-serif;
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:40px;
+  background: linear-gradient(90deg,#16b0c1,#661e92);
+  -webkit-background-clip:text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  letter-spacing:2px;
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  gap:10px;
+}
+
+.loader .dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #e8e8e8;
+  background: #16b0c1;
+  animation: jump 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes jump {
+  100% {
+    background: #661e92;
+    transform: translateY(-3rem) scale(1.9);
+  }
+}
+
+.loader .dot:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader .dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader .dot:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader .dot:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+main {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main.loaded {
+    opacity: 1;
+    visibility: visible;
+}
+  </style>
+</head>
+<body>
+
+<!-- Pre-loader -->
+<div class="loader-container">
+  <div class="loader-text">Akshnil Computer Institute</div>
+  <div class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<!-- ── NAVBAR ── -->
+<main>
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="nav-brand" aria-label="Akshnil Computer Institute Home">
+    <div class="nav-logo" aria-hidden="true"><i class="fa-solid fa-computer"></i></div>
+    <div class="nav-brand-text">
+      <span>Akshnil Computer Institute</span>
+      <span>Best Computer Training Institute for Professional Skills</span>
+    </div>
+  </a>
+  <ul class="nav-menu" id="navMenu" role="menubar">
+    <li role="none"><a href="#home" role="menuitem">Home</a></li>
+    <li role="none"><a href="#about" role="menuitem">About</a></li>
+    <li role="none"><a href="#courses" role="menuitem">Courses</a></li>
+    <li role="none"><a href="#facilities" role="menuitem">Facilities</a></li>
+    <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+    <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+    <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="home" class="hero" aria-label="Hero section">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fa-solid fa-award"></i> Maharashtra's Trusted Institute</div>
+    <h1>Welcome to <span>Akshnil</span> Computer Institute</h1>
+    <p>Learn Professional Computer Skills and Build Your Career with expert guidance, hands-on training, and industry-recognized certification in Shindkheda, Dhule.</p>
+    <div class="hero-btns">
+      <a href="#courses" class="btn-primary"><i class="fa-solid fa-graduation-cap"></i> View Courses</a>
+      <a href="#contact" class="btn-outline"><i class="fa-solid fa-phone"></i> Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="about" aria-labelledby="about-title">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-img-main">
+        <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
+      </div>
+      <div class="about-badge-card">
+        <div class="big">10+</div>
+        <small>Years of Excellence</small>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="section-tag">About Us</span>
+      <h2 class="section-title" id="about-title">Empowering Students with <span>Digital Skills</span></h2>
+      <p style="color:var(--text-light);font-size:0.9rem;line-height:1.75;margin-bottom:20px;">
+        Akshnil Computer Institute is a premier computer education center in Shindkheda, Dhule, Maharashtra. We are dedicated to providing high-quality, job-ready computer training to students and professionals alike. Our mission is to bridge the digital divide and prepare every student for the modern workforce.
+      </p>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+          <h4>Our Mission</h4>
+          <p>To deliver accessible, practical, and career-oriented computer education to every student in our region.</p>
+        </div>
+        <div class="mv-card">
+          <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          <h4>Our Vision</h4>
+          <p>To be the most trusted and innovative computer training institute in Maharashtra.</p>
+        </div>
+      </div>
+      <div class="about-points">
+        <div class="about-point">
+          <div class="about-point-icon"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+          <div>
+            <h4>Expert Trainers</h4>
+            <p>Learn from experienced professionals with industry expertise.</p>
+          </div>
+        </div>
+        <div class="about-point">
+          <div class="about-point-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+          <div>
+            <h4>Recognized Certification</h4>
+            <p>Receive certificates valued by employers across Maharashtra.</p>
+          </div>
+        </div>
+        <div class="about-point">
+          <div class="about-point-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+          <div>
+            <h4>Placement Assistance</h4>
+            <p>Dedicated placement support to help you land your dream job.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COURSES ── -->
+<section id="courses" class="courses" aria-labelledby="courses-title">
+  <div class="section-header center">
+    <span class="section-tag">What We Teach</span>
+    <h2 class="section-title" id="courses-title">Our <span>Popular Courses</span></h2>
+    <p class="section-sub">Choose from our wide range of industry-relevant computer courses designed for beginners and professionals.</p>
+  </div>
+  <div class="courses-grid">
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-solid fa-desktop" aria-hidden="true"></i></div>
+      <h3>Basic Computer Course</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 2 Months</span>
+        <span class="course-tag">Beginner</span>
+      </div>
+      <p>Master the fundamentals of computers, operating systems, internet usage, email, and essential digital skills.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></div>
+      <h3>MS Office</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 3 Months</span>
+        <span class="course-tag">All Levels</span>
+      </div>
+      <p>Master Word, Excel, PowerPoint, and Outlook for professional office productivity and data management.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-solid fa-calculator" aria-hidden="true"></i></div>
+      <h3>Tally with GST</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 3 Months</span>
+        <span class="course-tag">Accounting</span>
+      </div>
+      <p>Learn Tally ERP 9 & TallyPrime with complete GST billing, accounting, inventory, and financial reporting.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+      <h3>Graphic Design</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 4 Months</span>
+        <span class="course-tag">Creative</span>
+      </div>
+      <p>Create stunning visuals using Photoshop, Illustrator, CorelDRAW, and Canva for print and digital media.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+      <h3>Web Development</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 6 Months</span>
+        <span class="course-tag">Advanced</span>
+      </div>
+      <p>Build modern websites and web apps using HTML, CSS, JavaScript, and popular frameworks from scratch.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+    <article class="course-card reveal">
+      <div class="course-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+      <h3>Programming Courses</h3>
+      <div class="course-meta">
+        <span class="course-tag"><i class="fa-solid fa-clock"></i> 4 Months</span>
+        <span class="course-tag">Intermediate</span>
+      </div>
+      <p>Learn C, C++, Python, and Java programming with problem-solving, logic building, and real projects.</p>
+      <a href="#contact" class="btn-sm">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+  </div>
+</section>
+
+<!-- ── FACILITIES ── -->
+<section id="facilities" class="facilities" aria-labelledby="facilities-title">
+  <div class="section-header center">
+    <span class="section-tag">Why Choose Us</span>
+    <h2 class="section-title" id="facilities-title">World-Class <span>Facilities</span></h2>
+    <p class="section-sub">We provide an environment where students can learn, grow, and excel with top-notch infrastructure.</p>
+  </div>
+  <div class="facilities-grid">
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div>
+      <h3>Experienced Trainers</h3>
+      <p>Learn from industry professionals with years of teaching and practical experience in their domains.</p>
+    </div>
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-computer" aria-hidden="true"></i></div>
+      <h3>Modern Computer Lab</h3>
+      <p>State-of-the-art lab with latest hardware and software, ensuring hands-on practical learning.</p>
+    </div>
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-chalkboard" aria-hidden="true"></i></div>
+      <h3>Practical Training</h3>
+      <p>100% practical-oriented curriculum with real-world projects and assignments.</p>
+    </div>
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-wifi" aria-hidden="true"></i></div>
+      <h3>High Speed Internet</h3>
+      <p>Unlimited high-speed internet access for research, online learning, and project work.</p>
+    </div>
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+      <h3>Certification</h3>
+      <p>Receive government and industry-recognized certificates upon successful course completion.</p>
+    </div>
+    <div class="fac-card reveal">
+      <div class="fac-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+      <h3>Placement Assistance</h3>
+      <p>Dedicated placement cell to help graduates secure jobs in reputed companies and organizations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="gallery" class="gallery" aria-labelledby="gallery-title">
+  <div class="section-header center">
+    <span class="section-tag">Our Campus</span>
+    <h2 class="section-title" id="gallery-title">Institute <span>Gallery</span></h2>
+    <p class="section-sub">A glimpse of our vibrant campus, modern labs, and dedicated students in action.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal" data-caption="Modern Computer Training Lab" data-src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80" alt="Modern Computer Training Lab at Akshnil Computer Institute" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Students in Classroom Session" data-src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Students attending classroom training session" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Hands-on Computer Practice" data-src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80" alt="Students doing hands-on computer practice" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Graphic Design Training" data-src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Graphic design training session" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Programming Class in Action" data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Programming class with students coding" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Certificate Distribution Ceremony" data-src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80" alt="Certificate distribution ceremony for students" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+    <div class="gallery-item reveal" data-caption="Tally & Accounting Training" data-src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80">
+      <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80" alt="Tally and accounting training session" loading="lazy" />
+      <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials" class="testimonials" aria-labelledby="testi-title">
+  <div class="section-header center">
+    <span class="section-tag">Student Stories</span>
+    <h2 class="section-title" id="testi-title">What Our <span>Students Say</span></h2>
+    <p class="section-sub">Hear from our graduates who have transformed their careers through our programs.</p>
+  </div>
+  <div class="testi-slider" aria-live="polite">
+    <div class="testi-track" id="testiTrack">
+      <!-- Slide 1 -->
+      <div class="testi-card">
+        <div class="testi-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"Akshnil Computer Institute changed my life! The Tally with GST course was incredibly practical and I got a job in an accounting firm within weeks of completing it. The trainers are truly exceptional."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">RK</div>
+            <div class="testi-author-info">
+              <h4>Rohit Kulkarni</h4>
+              <span>Tally with GST Graduate</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"I joined the Graphic Design course with zero experience. Now I'm working as a freelance designer. The hands-on approach and industry tools they teach are exactly what employers look for!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">PM</div>
+            <div class="testi-author-info">
+              <h4>Priya Mahale</h4>
+              <span>Graphic Design Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="testi-card">
+        <div class="testi-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"The Web Development course here is outstanding. From HTML basics to building complete websites, every module was well-structured. I built my portfolio site during the course itself!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">AS</div>
+            <div class="testi-author-info">
+              <h4>Aniket Shinde</h4>
+              <span>Web Development Graduate</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="stars" aria-label="4 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"The MS Office course helped me secure a government data entry job. The trainer's patience and teaching style made even complex Excel formulas easy to understand. Highly recommend!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">SP</div>
+            <div class="testi-author-info">
+              <h4>Sunita Patil</h4>
+              <span>MS Office Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="testi-card">
+        <div class="testi-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"As a complete beginner, the Basic Computer Course was perfect. The staff is very supportive and the facility is well-equipped. I now confidently use computers for my business!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">MJ</div>
+            <div class="testi-author-info">
+              <h4>Madhuri Jadhav</h4>
+              <span>Basic Computer Graduate</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-text">"Learning Python at Akshnil Computer Institute was the best decision. The programming faculty ensures concepts are crystal clear. I cleared my college placement interview with ease!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">VB</div>
+            <div class="testi-author-info">
+              <h4>Varun Borse</h4>
+              <span>Programming Course Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testi-controls">
+    <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="testi-dots" id="testiDots"></div>
+    <button class="testi-btn" id="testiNext" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="contact" aria-labelledby="contact-title">
+  <div class="section-header center">
+    <span class="section-tag">Get In Touch</span>
+    <h2 class="section-title" id="contact-title">Contact <span>Us Today</span></h2>
+    <p class="section-sub">Have questions? We'd love to hear from you. Send us a message and we'll get back to you shortly.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+        <div class="contact-info-text">
+          <h4>Phone Number</h4>
+          <a href="tel:+917000000000">+91 70000 00000</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+        <div class="contact-info-text">
+          <h4>Email Address</h4>
+          <a href="mailto:info@akshnil.in">info@akshnil.in</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+        <div class="contact-info-text">
+          <h4>Our Location</h4>
+          <p>Shindkheda, Dist. Dhule,<br>Maharashtra, India</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+        <div class="contact-info-text">
+          <h4>Working Hours</h4>
+          <p>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14888.57!2d74.662!3d21.354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ed0b2ddbeaab%3A0x3f6bddef6a58cf11!2sShindkheda%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          title="Akshnil Computer Institute Location Map - Shindkheda, Dhule, Maharashtra"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <div class="contact-form reveal" role="form">
+      <h3>Send Us a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Full Name *</label>
+          <input type="text" id="fname" name="fname" placeholder="Your full name" autocomplete="name" />
+          <span class="err-msg" id="fname-err">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address *</label>
+          <input type="email" id="femail" name="femail" placeholder="your@email.com" autocomplete="email" />
+          <span class="err-msg" id="femail-err">Enter a valid email address.</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fphone">Phone Number *</label>
+          <input type="tel" id="fphone" name="fphone" placeholder="+91 XXXXX XXXXX" autocomplete="tel" />
+          <span class="err-msg" id="fphone-err">Enter a valid 10-digit phone number.</span>
+        </div>
+        <div class="form-group">
+          <label for="fcourse">Course Interested In</label>
+          <select id="fcourse" name="fcourse">
+            <option value="">Select a course</option>
+            <option>Basic Computer Course</option>
+            <option>MS Office</option>
+            <option>Tally with GST</option>
+            <option>Graphic Design</option>
+            <option>Web Development</option>
+            <option>Programming Courses</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fmsg">Your Message *</label>
+        <textarea id="fmsg" name="fmsg" placeholder="Write your message or inquiry here..."></textarea>
+        <span class="err-msg" id="fmsg-err">Please write a message.</span>
+      </div>
+      <button type="button" class="form-submit" id="formSubmit">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+      </button>
+      <div class="success-msg" id="successMsg" role="alert">
+        <i class="fa-solid fa-circle-check" style="color:#065f46;font-size:1.2rem"></i>
+        Thank you! Your message has been sent. We'll contact you shortly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" aria-hidden="true"><i class="fa-solid fa-computer"></i></div>
+      <br>
+      <strong style="color:#fff;font-size:1.05rem;">Akshnil Computer Institute</strong>
+      <p style="margin-top:10px;">Best Computer Training Institute for Professional Skills in Shindkheda, Dhule, Maharashtra. Empowering students with modern digital education since 2015.</p>
+      <div class="social-links" role="list" aria-label="Social media links">
+        <a href="#" role="listitem" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" role="listitem" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" role="listitem" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        <a href="#" role="listitem" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Our Courses</h4>
+      <ul class="footer-links">
+        <li><a href="#courses">Basic Computer</a></li>
+        <li><a href="#courses">MS Office</a></li>
+        <li><a href="#courses">Tally with GST</a></li>
+        <li><a href="#courses">Graphic Design</a></li>
+        <li><a href="#courses">Web Development</a></li>
+        <li><a href="#courses">Programming Courses</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <span>Shindkheda, Dist. Dhule, Maharashtra, India</span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <span><a href="tel:+917000000000" style="color:rgba(255,255,255,0.6);text-decoration:none;">+91 70000 00000</a></span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span><a href="mailto:info@akshnil.in" style="color:rgba(255,255,255,0.6);text-decoration:none;">info@akshnil.in</a></span>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+        <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Akshnil Computer Institute. All Rights Reserved.</span>
+    <span>Designed with <i class="fa-solid fa-heart" style="color:#FFC107"></i> in Maharashtra</span>
+  </div>
+</footer>
+</main>
+<script>
+/* ── PRELOADER ── */
+window.addEventListener('load', () => {
+  const loaderContainer = document.querySelector('.loader-container');
+  const mainContent = document.querySelector('main');
+  loaderContainer.classList.add('loaded');
+  mainContent.classList.add('loaded');
+});
+
+/* ── NAVBAR SCROLL ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ── HAMBURGER ── */
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+hamburger.addEventListener('click', () => {
+  const open = navMenu.classList.toggle('open');
+  hamburger.classList.toggle('active', open);
+  hamburger.setAttribute('aria-expanded', open);
+});
+navMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const offset = 78;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+
+/* ── SCROLL REVEAL ── */
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObserver.observe(el));
+
+/* ── GALLERY LIGHTBOX ── */
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const src = item.dataset.src || item.querySelector('img')?.src;
+    const cap = item.dataset.caption || '';
+    const alt = item.querySelector('img')?.alt || cap;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightboxCaption.textContent = cap;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+/* ── TESTIMONIALS SLIDER ── */
+const track = document.getElementById('testiTrack');
+const cards = track.querySelectorAll('.testi-card');
+const dotsContainer = document.getElementById('testiDots');
+let current = 0;
+const total = cards.length;
+
+cards.forEach((_, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
+  dot.addEventListener('click', () => goTo(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goTo(n) {
+  current = (n + total) % total;
+  track.style.transform = `translateX(-${current * 100}%)`;
+  dotsContainer.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+}
+
+document.getElementById('testiPrev').addEventListener('click', () => goTo(current - 1));
+document.getElementById('testiNext').addEventListener('click', () => goTo(current + 1));
+
+let autoSlide = setInterval(() => goTo(current + 1), 5000);
+track.parentElement.addEventListener('mouseenter', () => clearInterval(autoSlide));
+track.parentElement.addEventListener('mouseleave', () => { autoSlide = setInterval(() => goTo(current + 1), 5000); });
+
+/* Touch swipe */
+let startX = 0;
+track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+track.addEventListener('touchend', e => {
+  const diff = startX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+});
+
+/* ── FORM VALIDATION ── */
+document.getElementById('formSubmit').addEventListener('click', () => {
+  let valid = true;
+
+  const fname = document.getElementById('fname');
+  const femail = document.getElementById('femail');
+  const fphone = document.getElementById('fphone');
+  const fmsg = document.getElementById('fmsg');
+
+  const emailRgx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRgx = /^[6-9]\d{9}$/;
+
+  const check = (field, errId, condition) => {
+    const err = document.getElementById(errId);
+    if (condition) {
+      field.classList.remove('error');
+      err.classList.remove('show');
+    } else {
+      field.classList.add('error');
+      err.classList.add('show');
+      valid = false;
+    }
+  };
+
+  check(fname, 'fname-err', fname.value.trim().length >= 2);
+  check(femail, 'femail-err', emailRgx.test(femail.value.trim()));
+  check(fphone, 'fphone-err', phoneRgx.test(fphone.value.trim().replace(/\s/g,'')));
+  check(fmsg, 'fmsg-err', fmsg.value.trim().length >= 10);
+
+  if (valid) {
+    const btn = document.getElementById('formSubmit');
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+      btn.disabled = false;
+      document.getElementById('successMsg').classList.add('show');
+      [fname, femail, fphone, fmsg].forEach(f => f.value = '');
+      document.getElementById('fcourse').value = '';
+      setTimeout(() => document.getElementById('successMsg').classList.remove('show'), 6000);
+    }, 1800);
+  }
+});
+
+/* Remove error on input */
+['fname','femail','fphone','fmsg'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('input', () => {
+    el.classList.remove('error');
+    document.getElementById(id + '-err').classList.remove('show');
+  });
+});
+</script>
+</body>
+</html>
